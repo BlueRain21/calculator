@@ -28,7 +28,7 @@ const reducer = (state, action)=>{
     switch(action.type){
         case dispatchMethods.add:
             const e1 = state.equation == 0 ? action.payload : state.equation + action.payload;
-            if(["++", "--", "x÷", "÷x"].includes(e1.slice(e1.length-2))){
+            if(["++", "--", "x÷", "÷x", "-÷", "-x", "+÷", "+x"].includes(e1.slice(e1.length-2))){
                 return state
             }
             return {...state,
