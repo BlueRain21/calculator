@@ -9,7 +9,7 @@ const Output = () => {
   return (
     <div className="text-right relative pt-30">
       {/* <p className="text-[20px] text-muted-blue-grey-light dark:text-muted-blue-grey-dark mx-10 overflow-scroll">{equation}</p> */}
-      <label className="mx-10" htmlFor="inp1">
+      <label htmlFor="inp1">
         <span className="hidden">Enter values here</span>
         <input
           type="text"
