@@ -14,7 +14,7 @@ const Calculator = () =>{
 
     return (
             <div className="bg-white dark:bg-deep-charcaol-gray text-near-black-text dark:text-white
-            min-w-xs pt-30 w-[350px] h-fit">
+            min-w-xs w-[350px] h-fit">
                 <Output/>
                 <Input/>
             </div>

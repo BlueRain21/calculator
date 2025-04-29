@@ -3,6 +3,7 @@
 import { useContext } from "react";
 
 import { MainContext, dispatchMethods } from "../context/MainContext";
+import logo from "/calculator.webp"
 
 
 const Output = () =>{
@@ -11,14 +12,17 @@ const Output = () =>{
 
 
     return (
-        <div className="text-right">
+        <div className="text-right relative pt-30">
             {/* <p className="text-[20px] text-muted-blue-grey-light dark:text-muted-blue-grey-dark mx-10 overflow-scroll">{equation}</p> */}
+            <label className="hidden mx-10" htmlFor="inp1">Enter values here</label>
             <input type="text" value={equation} className="text-[20px] text-muted-blue-grey-light dark:text-muted-blue-grey-dark mx-10 overflow-scroll text-right focus:border-none focus:outline-none" 
                 onChange={(e) => {
                     dispatch({type: dispatchMethods.input, payload:e.target.value })
                 }}
+                id="inp1"
             />
             <p className="pb-10 mx-10 font-medium text-[48px] overflow-scroll">{result}</p>
+            <img className="w-[50px] absolute top-5 left-5 " src={logo}/>
         </div>
     )
 }
