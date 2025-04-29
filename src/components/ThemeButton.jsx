@@ -13,6 +13,7 @@ const ThemeButton = () => {
       <button
         className="w-15 h-15 border-2 border-pale-grey dark:border-charcoal-dark rounded-full cursor-pointer flex justify-center items-center text-2xl text-amaranth-red"
         onClick={changeTheme}
+        aria-label="Change the appearance theme"
       >
         <div>{theme == "light" ? <FiMoon /> : <IoSunny />}</div>
       </button>
