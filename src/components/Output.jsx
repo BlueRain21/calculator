@@ -24,7 +24,7 @@ const Output = () => {
       <p className="pb-10 mx-10 font-medium text-[48px] overflow-scroll">
         {result}
       </p>
-      <img className="w-[50px] absolute top-5 left-5 " src={logo} alt="logo" />
+      <img className="w-[50px] absolute top-5 left-5 " src={logo} alt="logo" loading="lazy"/>
     </div>
   );
 };
